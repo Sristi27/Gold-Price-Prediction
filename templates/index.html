@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New app</title>
+</head>
+<body>
+<div>
+<form action="{{ url_for('predict')}}"method="post"> 
+<input placeholder="SPX" name="SPX" />
+<input placeholder="USO" name="USO" />
+<input placeholder="SLV" name="SLV" />
+<input placeholder="EUR/USD" name="EUR/USD" />
+<button type="submit">Submit</button>
+</form>
+<br>
+<br>
+{{prediction_text}}
+</body>
+</html>
